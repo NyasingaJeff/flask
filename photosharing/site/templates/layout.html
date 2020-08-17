@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- fa CSS -->
+    <link rel="stylesheet" href="/static/css/font-awesome.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <title>Photo Sharing App....</title>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand em-text" href="/">Gamma</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" 
+        aria-controls="#navabarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarsExample09">
+        <ul class="nav navbar-nav mr-auto" >
+            <!-- here we will come an use  the if to appropriately change the  active class positioning -->
+          <li class="active"><a href="/" class="nav-link">Home</a></li> 
+          <li ><a href="/contact" class="nav-link">Contact</a></li>
+          <li><a href="{{ url_for('about')}}" class="nav-link">About</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    {%block content%}
+    {%endblock%}
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-7 col-sm-12">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-7 col-sm-12" >
+            <p> Copy right &copy; 2020 All rigths Reserved</p>
+            <p>Flask made me &comp; Nyasinga </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/popper.js"></script>
+    <script src="/static/js/tether.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
+</html>
